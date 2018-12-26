@@ -1,0 +1,18 @@
+@import url(../css/lib/bootstrap.min.css);
+
+body {
+	margin: 20px
+}
+
+a {
+	text-decoration: underline;
+}
+
+a.ducdhm-contact {
+	background: url(../img/icon-user.png) no-repeat 0 50%;
+	padding-left: 16px;
+}
+
+p {
+	min-height: 20px;
+}

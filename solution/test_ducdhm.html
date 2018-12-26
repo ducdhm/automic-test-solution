@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link type="text/css" rel="stylesheet" href="css/lib/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/lib/bootstrap-responsive.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+	<title>Test - DucDHM</title>
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/ejs.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="ckeditor/adapters/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+	<h1>Message template management (MTM)</h1>
+	<p id="notice" class="alert alert-success hide">
+		<a class="close">&times;</a><span></span>
+	</p>
+	<div class="row">
+		<div class="span3" id="left-menu">
+			<ul class="dropdown-menu loading" id="list-template"></ul>
+			<button type="button" class="btn btn-primary btn-add disabled">Add</button>
+			<button type="button" class="btn btn-success btn-edit disabled">Edit</button>
+			<button type="button" class="btn btn-danger btn-delete disabled">Delete</button>
+		</div>
+		<div class="span9" id="right-content">
+			<div id="loading" class="hide"></div>
+			<div class="editor-wrapper">
+				<div id="ducdhm-autocomplete" class="dropdown-menu" style="display: none"></div>
+				<textarea rows="10" id="editor"></textarea>
+			</div>
+			<div class="pull-right">
+				<button type="button" class="btn btn-primary btn-save disabled">Save</button>
+				<button type="button" class="btn btn-cancel disabled">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="modal-addnew" class="modal hide fade">
+	<div class="modal-header">
+		<button type="button" class="close">&times;</button>
+		<h3>Add new template</h3>
+	</div>
+	<div class="modal-body">
+		<p class="alert alert-error hide">
+			<strong>Error!</strong> <span></span>
+		</p>
+		<div class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label">Name:</label>
+				<div class="controls">
+					<input type="text" id="txt-name" value="" placeholder="Enter name of new template..." />
+					<input type="submit" class="hide" value="Hide" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn btn-close" data-dismiss="modal">Cancel</a>
+		<a href="#" class="btn btn-primary btn-addnew">Add</a>
+	</div>
+</div>
+</body>
+</html>

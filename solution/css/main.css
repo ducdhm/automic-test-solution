@@ -1,0 +1,77 @@
+#left-menu,
+#right-content {
+	height: 450px;
+	position: relative;
+}
+
+#left-menu .dropdown-menu {
+	position: static;
+	float: none;
+	display: block;
+	height: 436px;
+	margin: 0 0 20px;
+	border-radius: 0;
+}
+
+#left-menu .dropdown-menu li.disabled {
+	opacity: .4;
+	filter: alpha(opacity=40);
+}
+
+#left-menu .dropdown-menu li.disabled a {
+	cursor: default;
+}
+
+#left-menu .dropdown-menu.loading,
+#loading {
+	background: url(../img/loading.gif) no-repeat 50% 50%;
+}
+
+#left-menu .dropdown-menu.loading * {
+	display: none;
+}
+
+#right-content .editor-wrapper {
+	background-color: #fff;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	height: 448px;
+	margin: 0 0 20px;
+	position: relative;
+	z-index: 1;
+}
+
+/* =================================================================================
+   CKEditor loading
+   ================================================================================= */
+#loading {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(255, 255, 255, .5) url(../img/loading.gif) no-repeat 50% 50%;
+	z-index: 2;
+}
+
+/* =================================================================================
+   Autocomplete
+   ================================================================================= */
+#ducdhm-autocomplete {
+	position: absolute;
+	border-radius: 0;
+	float: none;
+	overflow: auto;
+	height: 120px;
+	width: 200px;
+	padding: 0;
+}
+
+#ducdhm-autocomplete li a {
+	padding: 3px 6px;
+	text-decoration: none;
+}

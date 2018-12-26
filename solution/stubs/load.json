@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Mail confirmation",
+		"id": "id_of_template01"
+	},
+	{
+		"title": "Invite Candidate",
+		"id": "id_of_template02"
+	},
+	{
+		"title": "Decline Candidate",
+		"id": "id_of_template03"
+	},
+	{
+		"title": "Offer Position",
+		"id": "id_of_template04"
+	},
+	{
+		"title": "Postpone",
+		"id": "id_of_template05"
+	}
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "type": "contact",
+        "name": "Doan Hoang Minh Duc",
+        "description": "Description of Doan Hoang Minh Duc"
+    },
+    {
+        "type": "text",
+        "name": "ducdhm",
+        "description": "This is candidate who do this test"
+    },
+    {
+        "type": "contact",
+        "name": "Bui Minh Cuong",
+        "description": "Description of Doan Hoang Minh Duc"
+    },
+    {
+        "type": "text",
+        "name": "cuongbm",
+        "description": "This is interviewer"
+    },
+    {
+        "type": "placeholder",
+        "name": "Automic",
+        "description": "Lets Automate Business | Automic"
+    }
+]

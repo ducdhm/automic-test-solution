@@ -1,0 +1,8 @@
+<% for (var i = 0, suggestion; suggestion = list[i]; i++) { %>
+	<li data-type="<%= suggestion.type %>" data-description="<%= suggestion.description %>" data-text="<%= suggestion.name %>">
+		<a tabindex="-1" href="#">
+			<i class="icon-<%= suggestion.type === 'text' ? 'text-width' : suggestion.type === 'placeholder' ? 'list-alt' : 'user' %>"></i>
+			<%= suggestion.name %>
+		</a>
+	</li>
+<% } %>
